@@ -1,7 +1,7 @@
 # HTML reader
 
 This is an program who reads the table of NBA player, from wikipedia urls, and plot a NBA player statistics, taken 3 best player from each team in the regular season.  
-It also offers a wikipedia golf program, with the BFS algotithm, finding the shortest way from a wikipedia link to another.    
+It also offers a wikipedia golf program.    
 It also reads a calender to make a markdown for the ski sport of choosen columns.
 
 ## Requirements
@@ -18,7 +18,7 @@ It also reads a calender to make a markdown for the ski sport of choosen columns
 ## Installation
 
 * `git clone https://github.uio.no/IN3110/IN3110-ahmettu/tree/main/assignment4` git repository containing the sourcecode
-* from the root simply run
+* from the root simply run  
 * `python3 -m pip install .`
 
 
@@ -29,6 +29,7 @@ It also reads a calender to make a markdown for the ski sport of choosen columns
 #### Unit Tests
 * navigate to the root:
 * `python3 -m pytest` / `pytest`
+!Note: There might be some data changes during the season, may not all test pass because of that.
 
 #### Ski Sports (Alpine ski World cup)
 To extract the information 
@@ -38,14 +39,19 @@ To extract the information
 From the calender on wikipedia, 
 with the url = (
  `https://en.wikipedia.org/wiki/20{year}–{year+1}_FIS_Alpine_Ski_World_Cup`)
-Simple run the code with  `python3 time_planer.py`.
+Simple run the code with   
+* `python3 time_planner.py`.
 
 #### Statistics of the NBA players
-There is already images of the plots on the directory: `NBA_player_statistics` wheras tou can check out
+There is already images of the plots on the directory: `NBA_player_statistics` wheras you can check out
 * `points`  
 * `assists`  
 * `rebounds`    
-Of the players from the last season.
+of the players from the last season. It is also possible to run the program `python3 fetch_player_statistics.py` to fetch the latest data about the regular season, who finds the top 3 best players for each team.
+etc. Top assists for the season is given by statistics like on the image down below
+![alt text](https://github.com/ahmetugsuz/HTML-Reader/blob/master/NBA_player_statistics/assists.png)
+
+
 
 #### Wiki Race
 Run: `python3 wiki_race_challenge.py`  
