@@ -16,10 +16,8 @@ It also reads a calender to make a markdown for the ski sport of choosen columns
 
 
 ## Installation
-
-* `git clone https://github.uio.no/IN3110/IN3110-ahmettu/tree/main/assignment4` git repository containing the sourcecode
-* from the root simply run  
-* `python3 -m pip install .`
+Simply clone the git repository containing the sourcecode:
+* `git clone https://github.com/ahmetugsuz/HTML-Reader` 
 
 
 ## Running
@@ -37,8 +35,8 @@ To extract the information
 * `Venue`   
 * `Type`  
 From the calender on wikipedia, 
-with the url = (
- `https://en.wikipedia.org/wiki/20{year}–{year+1}_FIS_Alpine_Ski_World_Cup`)
+with the url = 
+ `https://en.wikipedia.org/wiki/20{year}–{year+1}_FIS_Alpine_Ski_World_Cup`
 Simple run the code with   
 * `python3 time_planner.py`.
 
@@ -47,8 +45,11 @@ There is already images of the plots on the directory: `NBA_player_statistics` w
 * `points`  
 * `assists`  
 * `rebounds`    
-of the players from the last season. It is also possible to run the program `python3 fetch_player_statistics.py` to fetch the latest data about the regular season, who finds the top 3 best players for each team.
-etc. Top assists for the season is given by statistics like on the image down below
+of the players from the last season. It is also possible to run the program    
+* `python3 fetch_player_statistics.py`   
+to fetch the latest data about the regular season, who finds the top 3 best players for each team.
+etc. Top assists for the season is given by statistics like on the image down below  
+  
 ![alt text](https://github.com/ahmetugsuz/HTML-Reader/blob/master/NBA_player_statistics/assists.png)
 
 
@@ -56,6 +57,6 @@ etc. Top assists for the season is given by statistics like on the image down be
 #### Wiki Race
 Run: `python3 wiki_race_challenge.py`  
 , to run from the given start link: `"https://en.wikipedia.org/wiki/Python_(programming_language)"` and finish link: `"https://en.wikipedia.org/wiki/Peace"`  
-, finding the shortest path with BFS.
+, finding the shortest path with BFS. Note that this can take some time, it may be useful to change the urls.
 
 
