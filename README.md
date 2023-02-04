@@ -1,8 +1,8 @@
 # HTML reader
 
-This is an program who reads the table of NBA player, from wikipedia urls, and plot a NBA player statistics, taken 3 best player from each team in the regular season.  
-It also offers a wikipedia golf program.    
-It also reads a calender to make a markdown for the ski sport of choosen columns.
+The Program is a data analysis program that allows you to analyze and compare the performance of top NBA players.
+It reads player data from Wikipedia and selects the top three players based on their points, assists, and rebounds from each team in the regular season. 
+Allowing for comparison of performance within each team and across the league. The program provides a user-friendly plot for visualizing and analyzing player performance.
 
 ## Requirements
 
