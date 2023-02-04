@@ -50,7 +50,7 @@ of the players from the last season. It is also possible to run the program
 to fetch the latest data about the regular season, who finds the top 3 best players for each team.
 etc. Top assists for the season is given by statistics like on the image down below  
   
-![alt text](https://github.com/ahmetugsuz/HTML-Reader/blob/master/NBA_player_statistics/assists.png)
+![alt text](https://github.com/ahmetugsuz/HTML-Reader/blob/master/NBA_player_statistics/points.png)
 
 
 
