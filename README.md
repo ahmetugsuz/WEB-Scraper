@@ -1,4 +1,4 @@
-# HTML reader
+# HTML reader for Multi-Sport Analytics
 
 The Program is a data analysis program that allows you to analyze and compare the performance of top NBA players.
 It reads player data from Wikipedia and selects the top three players based on their points, assists, and rebounds from each team in the regular season. 
