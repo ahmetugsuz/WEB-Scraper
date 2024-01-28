@@ -53,21 +53,25 @@ def find_best_players(url: str) -> None:
     # get player statistics for each player,
     # using get_player_stats
     for team, players in all_players.items():
+        # Check if players is not None before iterating over it
+        if players is not None:
+            for index, player in enumerate(players):
+                stats = get_player_stats(player['url'], team)
+                if stats is not None and 'points' in stats and 'assists' in stats and 'rebounds' in stats:
+                    # Check if stats is not None and contains all required keys
+                    points = stats['points']
+                    assists = stats['assists']
+                    rebounds = stats['rebounds']
+                    player = {'name': player['name'], 'url': player['url'], 'points': points, 'assists': assists, 'rebounds': rebounds}
+                else: 
+                    player = {'name': player['name'], 'url': player['url'], 'points': 0, 'assists': 0, 'rebounds': 0}
+                players[index] = player
+        else:
+            # Handle the case when players is None for a specific team
+            # For example, you could log a message or skip processing for that team
+            ...
 
-        for index, player in enumerate(players):  
-            stats = get_player_stats(player['url'], team)
-                #stats = get_player_stats(player['url'], team)
-            # if the player switched team past year, 
-            #we ignore them 
-            if len(stats) != 0:
-                points = stats['points']
-                assists = stats['assists']
-                rebounds = stats['rebounds']
-                 #{'name': player['name'], 'url': player['url'], 'points': points, 'assists': assists, 'rebounds': rebounds}
-                player = {'name': player['name'], 'url': player['url'], 'points': points, 'assists': assists, 'rebounds': rebounds}
-            else: 
-                player = {'name': player['name'], 'url': player['url'], 'points': 0, 'assists': 0, 'rebounds': 0}
-            players[index] = player
+
 
     # at this point, we should have a dict of the form:
     # {
@@ -87,11 +91,14 @@ def find_best_players(url: str) -> None:
     best = {}
     top_stat = ...
     for team, players in all_players.items():
-        #print(team, players)
-        # Sort and extract top 3 based on points
-        players_sorted = list(sorted(players, key=lambda player: player['points']))
-        top_3 = [players_sorted[len(players_sorted)-1], players_sorted[len(players_sorted)-2], players_sorted[len(players_sorted)-3]]
-        best[team] = top_3
+        # Check if players is not None before sorting
+        if players is not None:
+            players_sorted = sorted(players, key=lambda player: player.get('points', 0))
+            top_3 = players_sorted[-3:]  # Get the last 3 players (top 3)
+            best[team] = top_3
+        else:
+            print(f"No players found for {team}.")  # Or any other appropriate action
+
 
     stats_to_plot = ['points', 'assists', 'rebounds']
     
@@ -160,7 +167,7 @@ def plot_best(best: Dict[str, List[Dict]], stat: str = "points") -> None:
     plt.plot(35, highest_y_label+int(highest_y_label/2)) # making the plot bigger to make it more clear, think of it like padding
     plt.title(stats_dir)
     plt.savefig(stats_dir+"/"+stat)
-    #plt.show()    #no need to show, when its already saved to a directory    
+    plt.show()    # u can cmt this out if u dont want plot.
 
 
 def get_teams(url: str) -> list:
@@ -267,7 +274,8 @@ def get_players(team_url: str) -> list:
         name = values[2]
         # and add to players a dict with
         # {'name':, 'url':}
-        players_dict = {'name': name, 'url': player_url[0]}
+
+        players_dict = {'name': name, 'url': player_url[0] if player_url else 'https://en.wikipedia.org/wiki/2021%E2%80%9322_Milwaukee_Bucks_season'}
         players.append(players_dict)
     # return list of players
     return players
@@ -304,7 +312,12 @@ def get_player_stats(player_url: str, team: str) -> dict:
         cols = row.find_all("td")
         values = [td.get_text(strip=True) for td in cols] # setting up values to the values of the row 
         # Check correct team (some players change team within season)
-        player_team = values[1]
+        if len(values) > 1:
+            player_team = values[1]
+        else:
+            # Handle the case when values does not contain enough elements
+            player_team = None  # Or any other appropriate action
+
         if str(player_team) != team:
             continue
         # load stats from columns

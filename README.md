@@ -21,11 +21,52 @@ The HTML Reader for Multi-Sport Analytics is a comprehensive data analysis progr
 
 
 ## Installation
+
+### Installing Requirements
+
+To run this project, you'll need to install the required Python packages listed in the `requirements.txt` file.
+
+#### Locally
+
+If you're not using a virtual environment, you can install the project dependencies directly using pip:
+
+```bash
+pip install -r requirements.txt
+```
+
+This command will install all the necessary packages globally on your system.
+
+#### Using a Virtual Environment
+
+It's recommended to use a virtual environment to manage project dependencies and isolate them from other projects. 
+If you haven't already, you can create a virtual environment using venv:  
+
+    python -m venv myenv   
+
+* On macOS/Linux:
+```bash
+source myenv/bin/activate
+```
+
+* On Windows:  
+```bash
+myenv\Scripts\activate
+```
+
+Once the virtual environment is activated, you can install the project dependencies using pip:  
+```bash
+pip install -r requirements.txt
+```
+
+This will install the required packages only within the virtual environment, keeping your system's Python installation clean.   
+
+### Cloning 
+
 To install the HTML Reader for Multi-Sport Analytics, simply clone the Git repository containing the source code:    
 
     git clone https://github.com/ahmetugsuz/HTML-Reader    
 
-## Running  
+### Running  
 
 Once installed, navigate to the root directory:  
 
