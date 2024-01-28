@@ -134,7 +134,6 @@ def plot_best(best: Dict[str, List[Dict]], stat: str = "points") -> None:
     """
     stats_dir = "NBA_player_statistics"
 
-
     X = [teams for teams in best.keys()]
     fig, ax = plt.subplots(figsize=(10.5,10.5)) #deciding size on the plot table to make it clear with the data
     width = 1
