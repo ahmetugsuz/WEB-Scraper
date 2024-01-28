@@ -21,15 +21,15 @@ The HTML Reader for Multi-Sport Analytics is a comprehensive data analysis progr
 
 
 ## Installation
-To install the HTML Reader for Multi-Sport Analytics, simply clone the Git repository containing the source code:  
-* `git clone https://github.com/ahmetugsuz/HTML-Reader` 
+To install the HTML Reader for Multi-Sport Analytics, simply clone the Git repository containing the source code:    
 
+    git clone https://github.com/ahmetugsuz/HTML-Reader    
 
 ## Running  
 
 Once installed, navigate to the root directory `cd HTML-Reader` and execute the following command to run `NBA_player_statistics` for the program Statistics of the NBA players:   
 
-        python3 fetch_player_statistics.py  
+    python3 fetch_player_statistics.py  
 
 
 #### Statistics of the NBA players
