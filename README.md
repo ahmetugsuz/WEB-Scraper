@@ -75,7 +75,7 @@ Simple run the code with
 #### Wiki Race
 Run:  
 
-python3 wiki_race_challenge.py   
+    python3 wiki_race_challenge.py   
 
 to run from the given start link: `"https://en.wikipedia.org/wiki/Python_(programming_language)"` and finish link: `"https://en.wikipedia.org/wiki/Peace"`, finding the shortest path with BFS. Note that this can take some time, it may be useful to change the urls.  
 
