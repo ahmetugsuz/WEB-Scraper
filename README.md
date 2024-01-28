@@ -1,8 +1,13 @@
-# HTML reader for Multi-Sport Analytics
+# Web-Scraper for Multi-Sport Analytics
 
-The Program is a data analysis program that allows you to analyze and compare the performance of top NBA players.
-It reads player data from Wikipedia and selects the top three players based on their points, assists, and rebounds from each team in the regular season. 
-Allowing for comparison of performance within each team and across the league. The program provides a user-friendly plot for visualizing and analyzing player performance.
+The HTML Reader for Multi-Sport Analytics is a comprehensive data analysis program designed specifically for analyzing and comparing the performance of top NBA players. It offers a robust platform for extracting player data from Wikipedia and identifying the top three players based on crucial performance metrics such as points, assists, and rebounds during the regular NBA season. This functionality enables users to conduct in-depth comparisons of player performance both within individual teams and across the league.   
+
+## Features:
+
+- Data extraction from Wikipedia for NBA player statistics.  
+- Identification of top players based on points, assists, and rebounds.  
+- User-friendly visualization of player performance through plots.  
+- Integration with external sports data sources for comprehensive analysis.  
 
 ## Requirements
 
@@ -16,17 +21,38 @@ Allowing for comparison of performance within each team and across the league. T
 
 
 ## Installation
-Simply clone the git repository containing the sourcecode:
+To install the HTML Reader for Multi-Sport Analytics, simply clone the Git repository containing the source code:  
 * `git clone https://github.com/ahmetugsuz/HTML-Reader` 
 
 
-## Running
+## Running  
+
+Once installed, navigate to the root directory `cd HTML-Reader` and execute the following command to run `NBA_player_statistics` for the program Statistics of the NBA players:   
+
+        python3 fetch_player_statistics.py  
+
+
+#### Statistics of the NBA players
+There is already images of the plots on the directory: `NBA_player_statistics` wheras you can check out
+* `points`  
+* `assists`  
+* `rebounds`    
+of the players from the last season. It is also possible to run the program    
+* `python3 fetch_player_statistics.py`   
+to fetch the latest data about the regular season, who finds the top 3 best players for each team.  
+etc. Top assists for the season is given by statistics like on the image down below    
+  
+![alt text](https://github.com/ahmetugsuz/HTML-Reader/blob/master/NBA_player_statistics/points.png)  
+
 
 ### Running Tests
 
 #### Unit Tests
-* navigate to the root:
-* `python3 -m pytest` / `pytest`
+To run unit tests, navigate to the root directory and execute the following command:  
+
+        python3 -m pytest / pytest   
+   
+
 !Note: There might be some data changes during the season, may not all test pass because of that.
 
 #### Ski Sports (Alpine ski World cup)
@@ -40,18 +66,6 @@ with the url =
 Simple run the code with   
 * `python3 time_planner.py`.
 
-#### Statistics of the NBA players
-There is already images of the plots on the directory: `NBA_player_statistics` wheras you can check out
-* `points`  
-* `assists`  
-* `rebounds`    
-of the players from the last season. It is also possible to run the program    
-* `python3 fetch_player_statistics.py`   
-to fetch the latest data about the regular season, who finds the top 3 best players for each team.
-etc. Top assists for the season is given by statistics like on the image down below  
-  
-![alt text](https://github.com/ahmetugsuz/HTML-Reader/blob/master/NBA_player_statistics/points.png)
-
 
 
 #### Wiki Race
@@ -60,3 +74,12 @@ Run: `python3 wiki_race_challenge.py`
 , finding the shortest path with BFS. Note that this can take some time, it may be useful to change the urls.
 
 
+
+Please note that this process may take some time, and users may opt to modify the URLs for their specific requirements.
+
+## Contributing:
+Contributions to the project are welcome! Please contact me on my website: [ahmettu.com](https://ahmettu.com)
+
+
+## License:
+This project is licensed under the MIT License. See the LICENSE file for more details.
