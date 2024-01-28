@@ -164,7 +164,7 @@ def plot_best(best: Dict[str, List[Dict]], stat: str = "points") -> None:
     plt.ylabel(stat)
     ax.yaxis.label.set_size(10.5)
     ax.xaxis.label.set_size(10.5)
-    plt.plot(35, highest_y_label+int(highest_y_label/2)) # making the plot bigger to make it more clear, think of it like padding
+    plt.plot(35, highest_y_label+int(highest_y_label/2) + 5) # making the plot bigger to make it more clear, think of it like padding
     plt.title(stats_dir)
     plt.savefig(stats_dir+"/"+stat)
     plt.show()    # u can cmt this out if u dont want plot.
