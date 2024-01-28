@@ -27,7 +27,11 @@ To install the HTML Reader for Multi-Sport Analytics, simply clone the Git repos
 
 ## Running  
 
-Once installed, navigate to the root directory `cd HTML-Reader` and execute the following command to run `NBA_player_statistics` for the program Statistics of the NBA players:   
+Once installed, navigate to the root directory:  
+
+    cd HTML-Reader   
+
+and execute the following command to run `NBA_player_statistics` program:   
 
     python3 fetch_player_statistics.py  
 
