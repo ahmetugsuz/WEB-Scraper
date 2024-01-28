@@ -54,7 +54,7 @@ etc. Top assists for the season is given by statistics like on the image down be
 #### Unit Tests
 To run unit tests, navigate to the root directory and execute the following command:  
 
-        python3 -m pytest / pytest   
+    python3 -m pytest / pytest   
    
 
 !Note: There might be some data changes during the season, may not all test pass because of that.
@@ -73,11 +73,11 @@ Simple run the code with
 
 
 #### Wiki Race
-Run: `python3 wiki_race_challenge.py`  
-, to run from the given start link: `"https://en.wikipedia.org/wiki/Python_(programming_language)"` and finish link: `"https://en.wikipedia.org/wiki/Peace"`  
-, finding the shortest path with BFS. Note that this can take some time, it may be useful to change the urls.
+Run:  
 
+python3 wiki_race_challenge.py   
 
+to run from the given start link: `"https://en.wikipedia.org/wiki/Python_(programming_language)"` and finish link: `"https://en.wikipedia.org/wiki/Peace"`, finding the shortest path with BFS. Note that this can take some time, it may be useful to change the urls.  
 
 Please note that this process may take some time, and users may opt to modify the URLs for their specific requirements.
 
