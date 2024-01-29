@@ -103,7 +103,7 @@ We are extracting the information
 From the calender on wikipedia, 
 with the url = `https://en.wikipedia.org/wiki/20{year}–{year+1}_FIS_Alpine_Ski_World_Cup`.    
 
-This is a pure example of web scrapping, where we extract the data from a website as wikipedia to make a content/table of it, further more can this data utilized, to build finer or bigger application.
+This is a pure example of web scrapping, where we extract the data from a website as wikipedia to make a content/table of it, further more can this data be utilized, to build a finer or bigger application.
 
 Example data resulted in the terminal shown below:  
 
