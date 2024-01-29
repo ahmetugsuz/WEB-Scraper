@@ -72,12 +72,13 @@ Once installed, navigate to the root directory:
 
     cd HTML-Reader   
 
-and execute the following command to run `NBA_player_statistics` program:   
+
+#### Statistics of the NBA players
+
+Execute the following command to run `NBA_player_statistics` program:   
 
     python3 fetch_player_statistics.py  
 
-
-#### Statistics of the NBA players
 There is already images of the plots on the directory: `NBA_player_statistics` wheras you can check out
 * `points`  
 * `assists`  
@@ -91,16 +92,16 @@ etc. Top assists for the season is given by statistics like on the image down be
 
 #### Ski Sports (Alpine ski World cup)  
 
-To extract the information 
-* `Date`  
-* `Venue`   
-* `Type`  
-From the calender on wikipedia, 
-with the url = `https://en.wikipedia.org/wiki/20{year}–{year+1}_FIS_Alpine_Ski_World_Cup`.    
-
-Simple run the code from the root:  
+To run the program (different from `NBA_player_statistics`) simply run the code from the root:  
 
     python3 time_planner.py   
+
+We are extracting the information 
+* `Date`    
+* `Venue`     
+* `Type`   
+From the calender on wikipedia, 
+with the url = `https://en.wikipedia.org/wiki/20{year}–{year+1}_FIS_Alpine_Ski_World_Cup`.    
 
 This is a pure example of web scrapping, where we extract the data from a website as wikipedia to make a content/table of it, further more can this data utilized, to build finer or bigger application.
 
