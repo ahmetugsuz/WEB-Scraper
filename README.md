@@ -96,12 +96,11 @@ To extract the information
 * `Venue`   
 * `Type`  
 From the calender on wikipedia, 
-with the url = 
- `https://en.wikipedia.org/wiki/20{year}–{year+1}_FIS_Alpine_Ski_World_Cup`
-Simple run the code from the root:
+with the url = `https://en.wikipedia.org/wiki/20{year}–{year+1}_FIS_Alpine_Ski_World_Cup`.    
+
+Simple run the code from the root:  
 
     python3 time_planner.py   
-
 
 This is a pure example of web scrapping, where we extract the data from a website as wikipedia to make a content/table of it, further more can this data utilized, to build finer or bigger application.
 
