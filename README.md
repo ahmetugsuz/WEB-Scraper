@@ -2,7 +2,7 @@
 
 The HTML Reader for Multi-Sport Analytics is a comprehensive data analysis program designed specifically for analyzing and comparing the performance of top NBA players. It offers a robust platform for extracting player data from Wikipedia and identifying the top three players based on crucial performance metrics such as points, assists, and rebounds during the regular NBA season. This functionality enables users to conduct in-depth comparisons of player performance both within individual teams and across the league.   
 
-## Features:
+## Features:  
 
 - Data extraction from Wikipedia for NBA player statistics.  
 - Identification of top players based on points, assists, and rebounds.  
@@ -123,8 +123,7 @@ to run from the given start link: `"https://en.wikipedia.org/wiki/Python_(progra
 Please note that this process may take some time, and users may opt to modify the URLs for their specific requirements.
 
 ## Contributing:
-Contributions to the project are welcome! Please contact me on my website: [ahmettu.com](https://ahmettu.com)
-
+Contributions to the project are welcome! Please contact me on my website: [ahmettu.com](https://ahmettu.com)  
 
 ## License:
 This project is licensed under the MIT License. See the LICENSE file for more details.
