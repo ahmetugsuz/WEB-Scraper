@@ -89,17 +89,6 @@ etc. Top assists for the season is given by statistics like on the image down be
   
 ![alt text](https://github.com/ahmetugsuz/HTML-Reader/blob/master/NBA_player_statistics/points.png)  
 
-
-### Running Tests
-
-#### Unit Tests
-To run unit tests, navigate to the root directory and execute the following command:  
-
-    python3 -m pytest / pytest   
-   
-
-!Note: There might be some data changes during the season, may not all test pass because of that.
-
 #### Ski Sports (Alpine ski World cup)
 To extract the information 
 * `Date`  
@@ -108,10 +97,11 @@ To extract the information
 From the calender on wikipedia, 
 with the url = 
  `https://en.wikipedia.org/wiki/20{year}–{year+1}_FIS_Alpine_Ski_World_Cup`
-Simple run the code with   
-* `python3 time_planner.py`.
+Simple run the code from the root:      
 
+    python3 time_planner.py  
 
+This is a pure example of web scrapping, where we extract the data from a website as wikipedia to make a content/table of it, further more can this data utilized, to build finer or bigger application.
 
 #### Wiki Race
 Run:  
@@ -121,6 +111,17 @@ Run:
 to run from the given start link: `"https://en.wikipedia.org/wiki/Python_(programming_language)"` and finish link: `"https://en.wikipedia.org/wiki/Peace"`, finding the shortest path with BFS. Note that this can take some time, it may be useful to change the urls.  
 
 Please note that this process may take some time, and users may opt to modify the URLs for their specific requirements.
+
+
+### Running Tests
+
+#### Unit Tests
+To run unit tests, navigate to the root directory and execute the following command:  
+
+    python3 -m pytest    
+   
+
+!Note: There might be some data changes during the season, may not all test pass because of that.
 
 ## Contributing:
 Contributions to the project are welcome! Please contact me on my website: [ahmettu.com](https://ahmettu.com)  
