@@ -89,7 +89,8 @@ etc. Top assists for the season is given by statistics like on the image down be
   
 ![alt text](https://github.com/ahmetugsuz/HTML-Reader/blob/master/NBA_player_statistics/points.png)  
 
-#### Ski Sports (Alpine ski World cup)
+#### Ski Sports (Alpine ski World cup)  
+
 To extract the information 
 * `Date`  
 * `Venue`   
@@ -97,11 +98,14 @@ To extract the information
 From the calender on wikipedia, 
 with the url = 
  `https://en.wikipedia.org/wiki/20{year}–{year+1}_FIS_Alpine_Ski_World_Cup`
-Simple run the code from the root:      
+Simple run the code from the root:        
 
     python3 time_planner.py  
 
 This is a pure example of web scrapping, where we extract the data from a website as wikipedia to make a content/table of it, further more can this data utilized, to build finer or bigger application.
+
+Example data resulted in the terminal shown below:  
+![alpine_image](https://github.com/ahmetugsuz/HTML-Reader/blob/master/Alpine_ski_img.png)  
 
 #### Wiki Race
 Run:  
