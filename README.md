@@ -9,7 +9,9 @@ The HTML Reader for Multi-Sport Analytics is a comprehensive data analysis progr
 - User-friendly visualization of player performance through plots.  
 - Integration with external sports data sources for comprehensive analysis.  
 
-## Requirements
+## Requirements  
+
+Make sure you have python (version > 3.x) installed on your machine before moving on.
 
 ## Dependencies
 * [Pip](https://pypi.org/project/pip/)
@@ -51,7 +53,7 @@ This command will install all the necessary packages globally on your system.
 It's recommended to use a virtual environment to manage project dependencies and isolate them from other projects. 
 If you haven't already, you can create a virtual environment using venv:  
 
-    python -m venv myenv   
+    python3 -m venv myenv   
 
 * On macOS/Linux:
 ```bash
@@ -125,7 +127,6 @@ To run unit tests, navigate to the root directory and execute the following comm
 
     python3 -m pytest    
    
-
 !Note: There might be some data changes during the season, may not all test pass because of that.
 
 ## Contributing:
