@@ -28,6 +28,9 @@ To install the HTML Reader for Multi-Sport Analytics, simply clone the Git repos
 
     git clone https://github.com/ahmetugsuz/HTML-Reader   
 
+Once installed, navigate to the root directory:  
+
+    cd HTML-Reader   
 
 ### Installing Requirements
 
@@ -68,11 +71,6 @@ pip install -r requirements.txt
 This will install the required packages only within the virtual environment, keeping your system's Python installation clean.    
 
 ### Running  
-
-Once installed, navigate to the root directory:  
-
-    cd HTML-Reader   
-
 
 #### Statistics of the NBA players
 
