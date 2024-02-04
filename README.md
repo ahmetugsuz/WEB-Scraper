@@ -22,6 +22,13 @@ The HTML Reader for Multi-Sport Analytics is a comprehensive data analysis progr
 
 ## Installation
 
+### Cloning 
+
+To install the HTML Reader for Multi-Sport Analytics, simply clone the Git repository containing the source code:    
+
+    git clone https://github.com/ahmetugsuz/HTML-Reader   
+
+
 ### Installing Requirements
 
 To run this project, you'll need to install the required Python packages listed in the `requirements.txt` file.
@@ -58,13 +65,7 @@ Once the virtual environment is activated, you can install the project dependenc
 pip install -r requirements.txt
 ```
 
-This will install the required packages only within the virtual environment, keeping your system's Python installation clean.   
-
-### Cloning 
-
-To install the HTML Reader for Multi-Sport Analytics, simply clone the Git repository containing the source code:    
-
-    git clone https://github.com/ahmetugsuz/HTML-Reader    
+This will install the required packages only within the virtual environment, keeping your system's Python installation clean.    
 
 ### Running  
 
